@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <title>Discord JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <script src="readyMessage.js"></script>
+  <script src="sendMessage.js"></script>
+  <script>
+    function rMessage() {
+      const message = document.getElementById("message_box").value
+      const check = document.getElementById("timelimit")
+      if (message != "") {
+        var res = readyMessage(message, check)
+        if (res != "") {
+          document.getElementById("result").innerHTML = "Message Sent!"
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="main">
+    <input type="text" id="message_box" />
+    <button onclick="rMessage()">Send</button><br />
+    <label>Send 5 messages with 5 seconds delay</label>
+    <input type="checkbox" id="timelimit" /><br />
+    <label id="result"></label>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+#result {
+    color: rgb(0, 180, 0);
+  }
+  
+.main {
+    padding: 40px;
+    background-color: rgb(240, 240, 240);
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 18%;
+}
+
+.main input {
+  padding: 10px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+}
+
+.main button {
+  padding: 10px;
+  background-color: rgb(138, 136, 255);
+  border-radius: 5px;
+  color: white;
+}
+
+.main button:hover {
+  background-color: rgb(180, 179, 255);
+}
